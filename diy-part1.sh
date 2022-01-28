@@ -16,9 +16,13 @@
 # Add a feed source
 echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
-sed -i '$a src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
-sed -i '$a src-git small https://github.com/kenzok8/small' feeds.conf.default
-sed -i '$a src-git AdGuardHome https://github.com/Twinzo1/AdGuardHome.git' feeds.conf.default
+sed -i '$a src-git haichuan https://github.com/haichuan2001/openwrt-packages' feeds.conf.default
+sed -i '$a src-git small https://github.com/haichuan2001/small' feeds.conf.default
+sed -i '$a src-git AdGuardHome https://github.com/haichuan2001/AdGuardHome.git' feeds.conf.default
 sed -i '$a src-git IPTV https://github.com/haichuan2001/openwrt-iptvhelper.git' feeds.conf.default
 #sed -i '$a src-git ZHIYONG https://github.com/NueXini/NueXini_Packages.git' feeds.conf.default
 #sed -i '$a src-git amule https://github.com/amule-project/amule.git' feeds.conf.default
+sed -i '$a src-git packages https://github.com/coolsnowwolf/packages' feeds.conf.default
+sed -i '$a src-git luci https://github.com/coolsnowwolf/luci' feeds.conf.default
+sed -i 'src-git routing https://git.openwrt.org/feed/routing.git' feeds.conf.default
+sed -i '$a src-git telephony https://git.openwrt.org/feed/telephony.git' feeds.conf.default
